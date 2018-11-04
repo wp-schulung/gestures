@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Gestures
-Plugin URI: http://premium.wpmudev.org/
+Plugin URI: https://wp-schulung.ch/
 Description: Brings basic gestures to WordPress using Tocca JS
-Author: Chris Knowles
+Author: Christian Zumbrunnen
 Version: 1.0
-Author URI: http://twitter.com/ChrisKnowles
+Author URI: https://twitter.com/chzumbrunnen
 */
 
 /*
@@ -24,7 +24,7 @@ function gesture_enqueue_scripts() {
 		wp_localize_script( 'gestures_init', 'gestures', $gestures_array );
 
 		// Enqueue the scripts.
-		wp_enqueue_script( 'tocca',  plugins_url( 'js/tocca.js', __FILE__ ), array('jquery'), null, true );
+		wp_enqueue_script( 'tocca',  plugins_url( 'js/Tocca..min.js', __FILE__ ), array('jquery'), null, true );
 		wp_enqueue_script( 'gestures_init' );		
 
 	}
